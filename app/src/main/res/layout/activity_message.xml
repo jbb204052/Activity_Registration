@@ -13,12 +13,12 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center|center_horizontal|center_vertical"
+            android:width="0dp"
             android:fontFamily="@font/lobster"
-            android:text="Welcome blablabla. Thanks for joining our community..."
+            android:text="Hello"
             android:textAlignment="center"
             android:textColor="#2196F3"
-            android:textSize="34sp"
-            android:width="0dp"/>
+            android:textSize="34sp" />
     </androidx.cardview.widget.CardView>
 
 </LinearLayout>

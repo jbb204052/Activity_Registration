@@ -70,7 +70,9 @@ public class MainActivity extends AppCompatActivity {
                 txt_fname.setError(null);
                 txt_lname.setError(null);
                 txt_username.setError(null);
+
                 displayMessage();
+
             } else {
                 txt_password.setError("Password does not match");
                 txt_confirm_pass.setError("Password does not match");
@@ -80,8 +82,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void displayMessage() {
         Intent intent = new Intent(this, Message.class);
+
         String fname = ((EditText) findViewById(R.id.txt_fname)).getText().toString();
         intent.putExtra(EXTRA_MESSAGE, fname);
+
         startActivity(intent);
     }
 }
