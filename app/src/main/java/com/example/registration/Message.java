@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class Message extends AppCompatActivity {
@@ -17,6 +18,7 @@ public class Message extends AppCompatActivity {
         String fname = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
 
         TextView textView = findViewById(R.id.txt_message);
+
         textView.setText("Welcome " + fname + "!. Thank you for joining our community...");
     }
 }

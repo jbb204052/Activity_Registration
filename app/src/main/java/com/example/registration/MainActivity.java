@@ -38,15 +38,10 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
-        Button btn_register = findViewById(R.id.btn_register);
-        btn_register.setOnClickListener(v -> {
-            register();
-        });
-
     }
 
-    private void register(){
+    public void register(View view){
+
         EditText txt_fname = findViewById(R.id.txt_fname);
         EditText txt_lname = findViewById(R.id.txt_lname);
         EditText txt_username = findViewById(R.id.txt_username);
